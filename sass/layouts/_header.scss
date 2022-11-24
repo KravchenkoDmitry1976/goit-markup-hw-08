@@ -1,0 +1,117 @@
+
+.header {
+border-bottom: 1px solid rgb(245, 244, 250);
+
+&__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: getColor('primary-text-color');
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__link:hover,
+&__link:hover{
+    color: getColor('akcent-text-color');
+}
+
+&__link.current {
+    color: getColor('akcent-text-color');
+    position: relative;
+}
+&__link.current::after {
+    content: "";
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background-color: getColor('akcent-text-color');
+    border-radius: 2px;
+}
+}
+.contacts__item {
+    display: flex;
+}
+
+.contacts__icon {
+    fill: getColor('paragraph-text-color');
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__item+.contacts__item {
+    margin-left: 50px;
+}
+
+.contacts__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: getColor('paragraph-text-color');
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.address__link:hover,
+.contacts__link:hover,
+.footer__link:hover {
+    color: getColor('akcent-text-color');
+
+}
+
+
+.address__link:focus,
+.contacts__link:focus,
+.footer__link:focus {
+    color: getColor('akcent-text-color');
+}
+
+.contacts__link:hover .contacts__icon,
+.contacts__link:focus .contacts__icon {
+    fill: getColor('akcent-text-color');
+}
+
+.container-nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.header__navigation {
+    display: flex;
+}
+
+.contacts__list {
+    display: flex;
+    margin-left: auto;
+}
+
+.header__list {
+    display: flex;
+    margin-left: 90px;
+}
+
+.header__item:not(:last-child) {
+
+    margin-right: 50px;
+}
+

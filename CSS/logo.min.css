@@ -1,0 +1,1 @@
+.logo{display:flex;align-items:center;font-family:"Raleway";font-weight:700;font-size:26px;line-height:1.19;letter-spacing:.03em;color:getColor("akcent-text-color");text-decoration:none}.logo__piece--dark{color:getColor("primary-text-color");display:inline-flex}.logo__piece--light{color:getColor("alternative-text-color")}/*# sourceMappingURL=logo.min.css.map */

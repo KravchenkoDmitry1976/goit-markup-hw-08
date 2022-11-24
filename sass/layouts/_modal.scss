@@ -1,0 +1,193 @@
+.modal {
+    width: 528px;
+    min-height: 581px;
+    background-color: getColor('alternative-text-color');
+    border-radius: 4px;
+    position: absolute;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleY(1);
+    transition: transform 250ms linear;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scaleY(0);
+
+}
+
+.form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23/20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    width: 100%;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    display: block;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: none;
+    border-radius: 4px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus+.icon-wrap {
+    fill: getColor('akcent-text-color');
+}
+
+.modal-input:focus {
+    border: 1px solid getColor('akcent-text-color');
+}
+
+.modal-close {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid getColor('paragraph-text-color');
+    border-radius: 50%;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover .icon-close {
+    fill: getColor('akcent-text-color');
+}
+
+.input-wrap {
+    position: relative;
+    margin-bottom: 10px;
+
+}
+
+.icon-wrap {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+}
+
+.modal-form {
+    display: block;
+
+}
+
+.modal-label {
+    display: flex;
+    margin-bottom: 4px;
+    width: 100%;
+    height: 18px;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    color: getColor('paragraph-text-color');
+}
+
+.form-textarea {
+    margin-bottom: 20px;
+}
+
+.modal-textarea {
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding: 12px 16px;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    resize: none;
+    outline: none;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+.modal-textarea:focus {
+    border: 1px solid getColor('akcent-text-color');
+}
+
+.modal-textarea::placeholder,
+.modal-input::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.input-wrap-submit {
+    display: flex;
+    align-items: baseline;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    left: 12px;
+}
+
+.icon-checkbox {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.checkbox:checked+.icon-checkbox {
+    border-color: getColor('akcent-text-color');
+    background-color: getColor('akcent-text-color');
+    background-image: url(../images/icon\ check.svg);
+    background-size: contain;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+
+}
+
+.modal-title-submit {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 14px;
+    line-height: calc(24/14);
+    margin-left: 8px;
+    letter-spacing: 0.03em;
+    color: getColor('paragraph-text-color');
+}
+
+.span-text {
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: getColor('akcent-text-color');
+    cursor: pointer;
+}
+
